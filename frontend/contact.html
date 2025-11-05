@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact - Wanderly</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="logo" href="index.html">Wanderly</a>
+    <nav id="navbar" class="nav">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="booking.html">Booking</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="signin.html">Sign In</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Contact Hero -->
+<section class="contact-hero">
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p>Ready to plan your next adventure? Our travel experts are here to help create your perfect journey.</p>
+  </div>
+</section>
+
+<!-- Contact Methods -->
+<section class="container page">
+  <div class="contact-methods">
+    <div class="contact-method">
+      <div class="contact-icon">📞</div>
+      <h3>Call Us</h3>
+      <p>Speak directly with our travel experts</p>
+      <a href="tel:+18005550199" class="contact-link">+1 800 555 0199</a>
+      <small>Mon-Fri: 9AM-7PM EST</small>
+    </div>
+    <div class="contact-method">
+      <div class="contact-icon">✉️</div>
+      <h3>Email Us</h3>
+      <p>Send us your questions anytime</p>
+      <a href="mailto:hello@wanderly.com" class="contact-link">hello@wanderly.com</a>
+      <small>Response within 24 hours</small>
+    </div>
+    <div class="contact-method">
+      <div class="contact-icon">💬</div>
+      <h3>Live Chat</h3>
+      <p>Instant support for quick questions</p>
+      <button class="contact-link" onclick="alert('Chat feature coming soon!')">Start Chat</button>
+      <small>Available 24/7</small>
+    </div>
+  </div>
+
+  <!-- Contact Form & Info -->
+  <div class="contact-main">
+    <div class="contact-form-section">
+      <h2>Send us a Message</h2>
+      <p class="muted">Tell us about your dream destination and we'll create a personalized itinerary just for you.</p>
+      
+      <form id="contact-form" class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <label>First Name
+            <input id="contact-fname" type="text" required>
+          </label>
+          <label>Last Name
+            <input id="contact-lname" type="text" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Email Address
+            <input id="contact-email" type="email" required>
+          </label>
+          <label>Phone Number
+            <input id="contact-phone" type="tel">
+          </label>
+        </div>
+        <label>Travel Interest
+          <select id="contact-interest" required>
+            <option value="">Select your interest</option>
+            <option value="adventure">Adventure Travel</option>
+            <option value="cultural">Cultural Experiences</option>
+            <option value="luxury">Luxury Travel</option>
+            <option value="family">Family Vacations</option>
+            <option value="business">Business Travel</option>
+            <option value="group">Group Tours</option>
+            <option value="custom">Custom Itinerary</option>
+          </select>
+        </label>
+        <label>Preferred Destination
+          <input id="contact-destination" type="text" placeholder="Where would you like to go?">
+        </label>
+        <label>Travel Dates
+          <input id="contact-dates" type="text" placeholder="When are you planning to travel?">
+        </label>
+        <label>Message
+          <textarea id="contact-message" rows="5" placeholder="Tell us about your travel dreams, group size, budget range, or any specific requirements..." required></textarea>
+        </label>
+        <p id="contact-msg" class="form-message"></p>
+        <button type="submit" class="btn contact-submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-info-section">
+      <div class="contact-info-card">
+        <h3>Our Offices</h3>
+        <div class="office-location">
+          <h4>🏢 Headquarters</h4>
+          <p>123 Travel Plaza<br>Mumbai, Maharashtra 400001<br>India</p>
+        </div>
+        <div class="office-location">
+          <h4>🌆 Regional Office</h4>
+          <p>456 Tourism Street<br>Ranchi, Jharkhand 834001<br>India</p>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <h3>Business Hours</h3>
+        <div class="business-hours">
+          <div class="hours-row">
+            <span>Monday - Friday</span>
+            <span>9:00 AM - 7:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span>Saturday</span>
+            <span>10:00 AM - 4:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span>Sunday</span>
+            <span>Emergency Only</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <h3>Emergency Support</h3>
+        <p>24/7 emergency assistance for travelers</p>
+        <a href="tel:+18005550911" class="emergency-number">+1 800 555 0911</a>
+        <small>For urgent travel emergencies only</small>
+      </div>
+
+      <div class="contact-info-card">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="https://instagram.com/wanderlytravel" target="_blank">📷 Instagram</a>
+          <a href="https://facebook.com/wanderly" target="_blank">🔗 Facebook</a>
+          <a href="https://twitter.com/wanderlytweets" target="_blank">🐦 Twitter</a>
+          <a href="https://linkedin.com/company/wanderly" target="_blank">💼 LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content container">
+    <!-- Brand / About -->
+    <div class="footer-brand">
+      <h3>Wanderly ✈️🌍</h3>
+      <p>Crafting journeys since 2015<br>Travel more, worry less.</p>
+      <div class="footer-social">
+<span>📸 <a class="footer-social-handle" href="https://instagram.com/wanderlytravel" target="_blank">@wanderlytravel</a></span>
+<span>🌐 <a class="footer-social-handle" href="https://facebook.com/wanderly" target="_blank">/wanderly</a></span>
+<span>🐦 <a class="footer-social-handle" href="https://twitter.com/wanderlytweets" target="_blank">@wanderlytweets</a></span>
+
+      </div>
+    </div>
+    <!-- Links -->
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@wanderly.com">hello@wanderly.com</a></li>
+        <li><a href="tel:+18005550199">+1 800 555 0199</a></li>
+        <li>Ranchi, Jharkhand</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="year"></span> Wanderly. All rights reserved.
+  </div>
+</footer>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

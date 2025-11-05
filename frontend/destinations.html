@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Destinations - Wanderly</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="logo" href="index.html">Wanderly</a>
+    <nav id="navbar" class="nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="destinations.html">Destinations</a>
+      <a href="booking.html">Booking</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="signin.html">Sign In</a>
+      <a href="contact.html" class="btn btn-ghost">Contact</a>
+    </nav>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Destinations Hero -->
+<section class="destinations-hero">
+  <div class="container">
+    <h1>Explore Amazing Destinations</h1>
+    <p>From tropical beaches to mountain peaks, discover your next adventure with our curated travel experiences.</p>
+  </div>
+</section>
+
+<section class="container destinations-filters">
+  <div class="filter-header">
+    <h2>Find Your Perfect Destination</h2>
+    <p class="muted">Use our filters to discover destinations that match your travel style</p>
+  </div>
+  <div class="filter-controls">
+    <div class="search-box">
+      <input id="dest-search" placeholder="Search destinations (e.g., Bali, Paris)" />
+      <button id="search-btn" class="btn">Search</button>
+    </div>
+    <div class="filter-selects">
+      <select id="region-filter">
+        <option value="all">All Regions</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="americas">Americas</option>
+      </select>
+      <select id="type-filter">
+        <option value="all">Any Type</option>
+        <option value="beach">Beach</option>
+        <option value="culture">Culture</option>
+        <option value="adventure">Adventure</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<section class="container grid grid-3" id="dest-list" style="margin-top:1rem">
+  <article class="dest-card" data-region="europe" data-type="culture">
+    <img src="images/chris-karidis-nnzkZNYWHaU-unsplash.jpg" alt="Paris">
+    <div class="dest-info">
+      <h4>Paris, France</h4>
+      <p>5 days • Culture • From $499</p>
+      <a href="booking.html" class="btn btn-small">Book Now</a>
+    </div>
+  </article>
+
+  <article class="dest-card" data-region="asia" data-type="beach">
+    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Bali">
+    <div class="dest-info">
+      <h4>Bali, Indonesia</h4>
+      <p>7 days • Beach • From $599</p>
+      <a href="booking.html" class="btn btn-small">Book Now</a>
+    </div>
+  </article>
+
+  <article class="dest-card" data-region="asia" data-type="culture">
+    <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Kyoto">
+    <div class="dest-info">
+      <h4>Kyoto, Japan</h4>
+      <p>4 days • Culture • From $699</p>
+      <a href="booking.html" class="btn btn-small">Book Now</a>
+    </div>
+  </article>
+
+  <article class="dest-card" data-region="americas" data-type="adventure">
+    <img src="https://images.unsplash.com/photo-1585491665805-48272c97a0f6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Patagonia">
+    <div class="dest-info">
+      <h4>Patagonia, Argentina</h4>
+      <p>8 days • Adventure • From $1299</p>
+      <a href="booking.html" class="btn btn-small">Book Now</a>
+    </div>
+  </article>
+
+  <article class="dest-card" data-region="europe" data-type="beach">
+    <img src="https://images.unsplash.com/photo-1504360222828-18cad26d38ba?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1177" alt="Amalfi">
+    <div class="dest-info">
+      <h4>Amalfi Coast, Italy</h4>
+      <p>5 days • Beach • From $799</p>
+      <a href="booking.html" class="btn btn-small">Book Now</a>
+    </div>
+  </article>
+
+  <article class="dest-card" data-region="asia" data-type="adventure">
+    <img src="https://images.unsplash.com/photo-1571330422603-a9bad8dd02b7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1529" alt="Nepal">
+    <div class="dest-info">
+      <h4>Annapurna, Nepal</h4>
+      <p>10 days • Adventure • From $999</p>
+      <a href="booking.html" class="btn btn-small">Book Now</a>
+    </div>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content container">
+    <!-- Brand / About -->
+    <div class="footer-brand">
+      <h3>Wanderly ✈️🌍</h3>
+      <p>Crafting journeys since 2015<br>Travel more, worry less.</p>
+      <div class="footer-social">
+       <span>📸 <a class="footer-social-handle" href="https://instagram.com/wanderlytravel" target="_blank">@wanderlytravel</a></span>
+<span>🌐 <a class="footer-social-handle" href="https://facebook.com/wanderly" target="_blank">/wanderly</a></span>
+<span>🐦 <a class="footer-social-handle" href="https://twitter.com/wanderlytweets" target="_blank">@wanderlytweets</a></span>
+
+      </div>
+    </div>
+    <!-- Links -->
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@wanderly.com">hello@wanderly.com</a></li>
+        <li><a href="tel:+18005550199">+1 800 555 0199</a></li>
+        <li>Ranchi, Jharkhand</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="year"></span> Wanderly. All rights reserved.
+  </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Booking - Wanderly</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="logo" href="index.html">Wanderly</a>
+    <nav id="navbar" class="nav">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a class="active" href="booking.html">Booking</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="signin.html">Sign In</a>
+      <a href="contact.html" class="btn btn-ghost">Contact</a>
+    </nav>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Booking Section -->
+<section class="booking-hero">
+  <div class="overlay"></div>
+  <div class="container booking-center">
+    <div class="booking-glass">
+      <div class="booking-info">
+        <h2>Book Your Trip</h2>
+        <p class="muted">Select a destination and dates. This is a frontend demo — no payments required.</p>
+        <ul class="muted">
+          <li>Personalized itinerary after booking</li>
+          <li>Free cancellation within 48 hours</li>
+        </ul>
+      </div>
+
+      <form id="booking-form" class="booking-form" onsubmit="return false;">
+        <label>Full name
+          <input id="book-name" type="text" placeholder="Your name" required>
+        </label>
+        <label>Email
+          <input id="book-email" type="email" placeholder="you@example.com" required>
+        </label>
+        <label>Destination
+          <select id="book-dest" required>
+            <option value="">Select</option>
+            <option>Paris, France</option>
+            <option>Bali, Indonesia</option>
+            <option>Kyoto, Japan</option>
+            <option>Patagonia, Argentina</option>
+          </select>
+        </label>
+        <div class="row">
+          <label>Check in
+            <input id="book-checkin" type="date" required>
+          </label>
+          <label>Check out
+            <input id="book-checkout" type="date" required>
+          </label>
+        </div>
+        <label>Travelers
+          <input id="book-travelers" type="number" min="1" value="1" required>
+        </label>
+        <button class="btn booking-btn">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content container">
+    <!-- Brand / About -->
+    <div class="footer-brand">
+      <h3>Wanderly ✈️🌍</h3>
+      <p>Crafting journeys since 2015<br>Travel more, worry less.</p>
+      <div class="footer-social">
+    <span>📸 <a class="footer-social-handle" href="https://instagram.com/wanderlytravel" target="_blank">@wanderlytravel</a></span>
+    <span>🌐 <a class="footer-social-handle" href="https://facebook.com/wanderly" target="_blank">/wanderly</a></span>
+<span>🐦 <a class="footer-social-handle" href="https://twitter.com/wanderlytweets" target="_blank">@wanderlytweets</a></span>
+
+      </div>
+    </div>
+    <!-- Links -->
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@wanderly.com">hello@wanderly.com</a></li>
+        <li><a href="tel:+18005550199">+1 800 555 0199</a></li>
+        <li>Ranchi, Jharkhand</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="year"></span> Wanderly. All rights reserved.
+  </div>
+</footer>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
