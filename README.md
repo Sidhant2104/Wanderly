@@ -156,7 +156,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Sidhant Singh**
 - GitHub: [@Sidhant2104](https://github.com/Sidhant2104)
 - LinkedIn: [Sidhant Singh](https://linkedin.com/in/sidhant-singh)
-- Email: sidhant.singh@example.com
+- Email: sidhantsingh5498@gmail.com
 
 ## 🙏 Acknowledgments
 
